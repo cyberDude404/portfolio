@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vicky Saini | Portfolio</title>
+  <meta name="description" content="Vicky Saini - Cybersecurity and Python Developer Portfolio">
+  <meta name="author" content="Vicky Saini">
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .float-image {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="w-full px-8 py-4 flex justify-between items-center shadow-md fixed bg-white top-0 z-50">
+    <h1 class="text-xl font-semibold">Vicky Saini</h1>
+    <nav>
+      <ul class="flex space-x-6 text-md font-medium">
+        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-500">About</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col md:flex-row justify-center items-center pt-32 px-8 text-center md:text-left">
+    <div class="md:w-1/2">
+      <img src="/portfolio_folder/my.png" alt="Vicky Saini" class="rounded-full mx-auto shadow-xl float-image" />
+    </div>
+    <div class="md:w-1/2 mt-6 md:mt-0 md:pl-12">
+      <p class="text-gray-900">Hey, I'm</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">Vicky Saini</h1>
+      <h2 class="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
+        <span id="typed"></span>
+      </h2>
+      <div class="space-x-4 mb-4">
+        <a href="resume.pdf" download class="border border-gray-700 px-4 py-2 rounded-full hover:bg-gray-800 hover:text-white">Download CV</a>
+        <a href="#contact" class="bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-900">Contact Info</a>
+      </div>
+      <div class="flex justify-center md:justify-start space-x-5 mt-2 text-2xl">
+        <a href="https://www.instagram.com/vicky_badshah9634/" target="_blank" class="hover:text-pink-500"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://github.com/cyberDude404" target="_blank" class="hover:text-gray-900"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="" target="_blank" class="hover:text-blue-600"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="mailto:techbro8445@gmail.com" class="hover:text-red-600"><ion-icon name="mail-outline"></ion-icon></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50 text-center px-6">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="max-w-2xl mx-auto text-gray-700 text-lg">
+      Hey there! I’m Vicky — a passionate BCA student with a strong focus on <b>Cybersecurity</b>,<b>Ethical Hacking</b>, <b>Kali Linux</b>, and <b>Python programming</b>. I love exploring how digital systems work (and how they can be protected), and I’m always eager to take on new challenges that help me grow as a tech enthusiast. <br>
+      Beyond the world of code, I’m deeply curious about how businesses operate — from innovative startups to global brands. I enjoy learning about business models, marketing strategies, and the factors that drive real-world success. <br>
+      When I’m not diving into tech or business case studies, you’ll probably find me watching movies and web series, traveling, or just having fun with friends. I truly believe that learning never stops, and I’m always excited to explore new ideas, skills, and experiences. <br> <b>Thanks for visiting my portfolio — feel free to connect!</b>
+    </p>
+    <p class="mt-4 text-gray-600 italic">
+      "Hack the mindset, secure the system."
+    </p>
+
+    <div class="mt-8 flex justify-center flex-wrap gap-8 text-6xl text-gray-700">
+      <!-- Python -->
+      <div class="flex flex-col items-center hover:scale-110 transform transition-transform duration-300" title="Python">
+        <i class="devicon-python-plain colored text-6xl"></i>
+        <span class="text-sm mt-1">Python</span>
+      </div>
+
+      <!-- Kali Linux -->
+      <div class="flex flex-col items-center hover:scale-110 transform transition-transform duration-300">
+        <i class="devicon-linux-plain colored" title="Kali Linux"></i>
+        <span class="text-sm mt-1">Kali Linux</span>
+      </div>
+
+      <!-- Cybersecurity -->
+      <div class="flex flex-col items-center hover:scale-110 transform transition-transform duration-300">
+        <ion-icon name="shield-checkmark-outline" class="text-gray-700" title="Cybersecurity"></ion-icon>
+        <span class="text-sm mt-1">Cybersecurity</span>
+      </div>
+
+      <!-- Ethical Hacking -->
+      <div class="flex flex-col items-center hover:scale-110 transform transition-transform duration-300">
+        <i class="fas fa-user-secret text-gray-700" title="Ethical Hacking"></i>
+        <span class="text-sm mt-1">Ethical Hacking</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white text-center px-6">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <form action="https://formspree.io/f/manjarbg" method="POST" class="max-w-xl mx-auto space-y-4">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded border border-gray-300" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded border border-gray-300" required>
+      <textarea name="message" placeholder="Your Message" rows="5" class="w-full p-3 rounded border border-gray-300" required></textarea>
+      <input type="hidden" name="_subject" value="New submission from portfolio!">
+      <button type="submit" class="bg-gray-800 hover:bg-gray-900 px-6 py-3 rounded-full text-white">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-gray-600">
+    <p>&copy; 2025 Vicky Saini. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'flip-left'
+    });
+
+    const typed = new Typed('#typed', {
+    strings: [
+    'Cybersecurity &amp; Ethical Hacking Enthusiast',
+    'Python Practitioner',
+    'Linux Explorer'
+   ],
+    typeSpeed: 50,       
+    backSpeed: 25,        
+    backDelay: 2000,
+    loop: true
+    });
+
+    document.querySelector("form").addEventListener("submit", function () {
+      alert("Thanks! Your message has been sent.");
+    });
+  </script>
+</body>
+</html>
